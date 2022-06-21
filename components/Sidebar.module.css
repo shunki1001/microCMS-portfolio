@@ -1,0 +1,54 @@
+.logo_container {
+  margin: 2em auto;
+  padding-top: 100px;
+}
+.logo {
+  width: 75px;
+  height: 75px;
+}
+
+.nav_container {
+  justify-content: space-between;
+  list-style: none;
+  text-align: left;
+  font-size: 1.3rem;
+}
+.nav_link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  transition: 0.3s;
+}
+.nav_link:hover {
+  opacity: 0.5;
+}
+.nav_active {
+  color: #e7001d;
+}
+.nav_link li {
+  display: inline-block;
+  width: 176px;
+  margin-top: 24px;
+  margin-left: 24px;
+}
+/* .nav_active li::after {
+  content: "";
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url("/images/jinbaori.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+.icon_container {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+}
+.nav_active .icon_container {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url("/images/jinbaori.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

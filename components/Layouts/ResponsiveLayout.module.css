@@ -1,0 +1,10 @@
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/images/japanese-paper_00363.jpg");
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+}
+.main_container_with_sidebar {
+  margin-left: 240px;
+}

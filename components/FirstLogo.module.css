@@ -1,0 +1,114 @@
+#first_overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(255, 255, 255, 1);
+  animation-delay: 3s;
+  animation-duration: 1s;
+  animation-name: fadeOut;
+  animation-fill-mode: forwards;
+  z-index: 9000;
+  position: absolute;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+#logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+#logo div {
+  position: absolute;
+  animation-timing-function: cubic-bezier(0.1, 0.98, 0.89, 0.55);
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  animation-duration: 2s;
+}
+#upper img,
+#lower img {
+  width: 100%;
+}
+#right img,
+#left img {
+  height: 100%;
+}
+#upper {
+  width: 100%;
+  top: 0;
+  z-index: 9010;
+  animation-name: upperAnimation;
+}
+#lower {
+  width: 100%;
+  /* 100 / 293 * 49 * (1 + 2/ 3)px */
+  top: 28px;
+  z-index: 9030;
+  animation-name: lowerAnimation;
+}
+#left {
+  height: calc(100% - 100 / 293 * 49px);
+  /* 100 / 293 * 49 * (1 + 2/ 3)px */
+  left: 28px;
+  top: 17px;
+  z-index: 9040;
+  animation-name: leftAnimation;
+}
+#right {
+  height: 100%;
+  right: 28px;
+  z-index: 9020;
+  animation-name: rightAnimation;
+}
+
+@keyframes upperAnimation {
+  0% {
+    left: -40vw;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes lowerAnimation {
+  0% {
+    opacity: 0;
+    left: 40vw;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes leftAnimation {
+  0% {
+    opacity: 0;
+    top: 40vh;
+  }
+  100% {
+    opacity: 1;
+    /* 100 / 293 * 49 px */
+    top: 17px;
+  }
+}
+@keyframes rightAnimation {
+  0% {
+    opacity: 0;
+    top: -40vh;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}

@@ -1,0 +1,19 @@
+.table_of_contents {
+  border-top: dashed 2px #3c4043;
+  border-bottom: dashed 2px #3c4043;
+  margin: 4em 1em;
+  padding-top: 0.5em;
+  padding-left: 1em;
+}
+.table_of_contents p {
+  margin: 0 auto;
+}
+.table_of_contents a {
+  color: #e7001d;
+}
+.table_of_contents a:hover {
+  color: #010f29;
+}
+.table_of_contents ul {
+  list-style: "- ";
+}

@@ -38,6 +38,10 @@ function MyApp(props: MyAppProps) {
           href="/favicon/favicon-16x16.png"
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Noto+Sans+JP"
+          rel="stylesheet"
+        />
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />

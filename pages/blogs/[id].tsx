@@ -3,6 +3,9 @@ import * as cheerio from "cheerio";
 import hljs from "highlight.js";
 import "highlight.js/styles/github-dark-dimmed.css";
 import { Container } from "@mui/material";
+import styles from "../../components/blogPage.module.css";
+import { headingsList } from "../../libs/headings-list";
+import { Heading } from "../../components/Heading";
 
 type Props = {
   blog: {
@@ -10,6 +13,7 @@ type Props = {
     publishedAt: string;
     content: string;
     body: any;
+    tableOfContentsArray: [];
   };
 };
 
@@ -18,13 +22,18 @@ export default function BlogId(props: Props) {
   return (
     <Container maxWidth="lg">
       <main>
-        <h1>{blog.title}</h1>
-        <p>{blog.publishedAt}</p>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `${blog.body}`,
-          }}
-        />
+        <h1 style={{ marginTop: 0, paddingTop: "1em" }}>{blog.title}</h1>
+        <p style={{ textAlign: "right" }}>
+          更新日：{blog.publishedAt.split("T")[0]}
+        </p>
+        <Heading headingsList={blog.tableOfContentsArray} />
+        <div className={styles.container}>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `${blog.body}`,
+            }}
+          />
+        </div>
       </main>
     </Container>
   );
@@ -53,9 +62,15 @@ export const getStaticProps = async (context: { params: { id: string } }) => {
     $(elm).addClass("hljs");
   });
 
+  // 目次
+  const tableOfContentsArray = headingsList(data.content);
   return {
     props: {
-      blog: { ...data, body: $.html() },
+      blog: {
+        ...data,
+        body: $.html(),
+        tableOfContentsArray: tableOfContentsArray,
+      },
     },
   };
 };

@@ -1,0 +1,49 @@
+.container {
+  overflow-wrap: break-word;
+  margin: 0 auto;
+  padding-bottom: 5em;
+  color: #3c4043;
+}
+.container h2 {
+  position: relative;
+  padding-left: 1.75em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border: 1px solid #3c4043;
+  background-color: #fff;
+}
+.container h2:before {
+  content: "";
+  position: absolute;
+  top: 0.75em;
+  left: 0.5em;
+  background-image: url("/images/blogpage/h2_icon.svg");
+  width: 1em;
+  height: 1em;
+}
+
+.container h3 {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #3c4043;
+}
+
+.container ul {
+  color: #3c4043;
+  border-top: solid #3c4043 1px;
+  border-bottom: solid #3c4043 1px;
+  padding: 0.5em 0 0.5em 1.5em;
+}
+
+.container ul ul {
+  color: #3c4043;
+  border-top: none;
+  border-bottom: none;
+  padding: 0.25em 0 0.25em 1.5em;
+}
+.container a,
+.container a:visited {
+  color: #e7001d;
+}
+.container a:hover {
+  color: #010f29;
+}

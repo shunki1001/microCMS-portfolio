@@ -1,6 +1,7 @@
 import Sidebar from "../Sidebar";
 import { useMediaQuery } from "react-responsive";
 import FirstLogo from "../FirstLogo";
+import Footer from "../Footer";
 import { ReactNode, useEffect, useState } from "react";
 import styles from "./ResponsiveLayout.module.css";
 import { AppBar, Box, IconButton, Toolbar } from "@mui/material";
@@ -70,6 +71,7 @@ const ResponsiveLayout: React.FC<Props> = ({ children }) => {
               <div className={styles.main_container}>{children}</div>
             </div>
           )}
+          <Footer />
         </>
       )}
     </div>

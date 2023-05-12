@@ -33,8 +33,12 @@ const theme = createTheme({
         width: "2px",
         height: "60px",
         margin: "auto",
-      }
-    }
+      },
+    },
+    body1:{
+      lineHeight: "2em",
+      margin: "1em auto",
+    },
   },
   components: {
     MuiPaper: {

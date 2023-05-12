@@ -1,5 +1,6 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import styles from "../../styles/Home.module.css";
+import { aboutList } from "../../libs/aboutList";
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
       {/* <FirstLogo /> */}
       <Box className={styles.home_contents}>
         <Box className={styles.about_contents}>
-          <article className={styles.tajimuratoha}>
+          <Box className={styles.tajimuratoha}>
             <Typography variant="h2">たじむらとは</Typography>
             <Typography>
               たじむらとは、夫婦で活動するフリーランスチームです。
@@ -23,8 +24,9 @@ const About = () => {
             <Typography>  
               色は、日本にゆかりのある「濃紺」と「猩々緋（しょうじょうひ）」を用いています。
             </Typography>
-          </article>
-          <article>
+            {/* TODO：ここに顔のイラスト入れたい。左右どっちかに寄せるイメージで */}
+          </Box>
+          <Box className={styles.vision}>
             <Typography variant="h2">たじむらの目指すところ</Typography>
             <Typography>
               「常に人の一歩先にいたい」「他人と同じことをやりたくない」という想いを抱いております。
@@ -49,11 +51,20 @@ const About = () => {
             <Typography>
               関わる人全員にとっての、唯一無二の存在になれることを夢見て活動しています。
             </Typography>
-          </article>
-          <article>
-            <Typography variant="h2"></Typography>
-            <Typography></Typography>
-          </article>
+          </Box>
+          <Box className={styles.about}>
+          <Typography variant="h2">会社情報</Typography>
+            <Grid container spacing={2}>
+              {aboutList.map((item)=>{
+                return (
+                  <>
+                    <Grid item xs={3}>{item.title}</Grid>
+                    <Grid item xs={9}>{item.content}</Grid>
+                  </>
+                )
+              })}
+            </Grid>
+          </Box>
         </Box>
       </Box>
     </Container>

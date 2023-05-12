@@ -1,6 +1,6 @@
 import { Box, Card, CardActionArea, CardContent, CardMedia, Container, Paper, Typography, styled } from "@mui/material";
 import Grid from '@mui/material/Grid';
-import { serviceList } from "./serviceList";
+import { serviceList } from "../../libs/serviceList";
 
 
 

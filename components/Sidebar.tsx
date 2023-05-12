@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import linkList from "./linkList";
 import styles from "./Sidebar.module.css";
+import { useEffect } from "react";
 
 export const drawerWidth = 240;
 
@@ -16,6 +17,10 @@ interface Props {
 const Sidebar: React.FC<Props> = (props) => {
   const { variant, anchor, open, setOpen } = props;
   const router = useRouter();
+
+  useEffect(()=>{
+    setOpen(false)
+  },[router.pathname])
   return (
     <Drawer
       variant={variant}

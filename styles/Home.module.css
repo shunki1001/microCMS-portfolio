@@ -1,16 +1,17 @@
 .home_contents {
   width: 100%;
   text-align: center;
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
-.home_contents h2 {
+.about_contents h2 {
   position: relative;
   display: inline-block;
   margin: 2em auto;
   font-size: 20px;
+  margin-top: calc(4em + 60px);
 }
 
-.home_contents h2::before {
+.about_contents h2::before {
   content: "";
   position: absolute;
   top: calc(-100% - 60px);
@@ -20,4 +21,9 @@
   height: 60px;
   margin: auto;
   background-color: black;
+}
+
+.about_contents p{
+  line-height: 2em;
+  margin: 1em auto;
 }

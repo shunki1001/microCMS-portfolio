@@ -42,6 +42,8 @@ function MyApp(props: MyAppProps) {
           href="https://fonts.googleapis.com/css?family=Noto+Sans+JP"
           rel="stylesheet"
         />
+        <script src="https://embedsocial.com/js/iframe.js"></script>
+      <script>iFrameResize();</script>
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />

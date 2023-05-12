@@ -4,7 +4,7 @@ import FirstLogo from "../FirstLogo";
 import Footer from "../Footer";
 import { ReactNode, useEffect, useState } from "react";
 import styles from "./ResponsiveLayout.module.css";
-import { AppBar, Box, IconButton, Toolbar } from "@mui/material";
+import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
 import Image from "next/image";
@@ -12,6 +12,8 @@ import Image from "next/image";
 interface Props {
   children: ReactNode;
 }
+
+const footerText:string = "©tajimura 2023"
 
 const ResponsiveLayout: React.FC<Props> = ({ children }) => {
   // hydrationエラー解消のため必要
@@ -41,6 +43,11 @@ const ResponsiveLayout: React.FC<Props> = ({ children }) => {
               />
               <div className={styles.main_container_with_sidebar}>
                 {children}
+                <Box
+                  className={styles.footer}
+                >
+                  <Typography>{footerText}</Typography>
+                </Box>
               </div>
             </>
           ) : (
@@ -68,10 +75,16 @@ const ResponsiveLayout: React.FC<Props> = ({ children }) => {
                 open={open}
                 setOpen={setOpen}
               />
-              <div className={styles.main_container}>{children}</div>
+              <div className={styles.main_container}>
+                {children}
+                <Box
+                  className={styles.footer}
+                >
+                  <Typography>{footerText}</Typography>
+                </Box>
+              </div>
             </div>
           )}
-          <Footer />
         </>
       )}
     </div>

@@ -11,11 +11,27 @@ const Web = () => {
   }
   return (
     <Box sx={{ flexGrow: 1, maxWidth: "900px", margin: " 0 auto", padding: "16px" }}>
-      <Container maxWidth="sm">
+      <Container maxWidth="sm" sx={{textAlign:  "center"}}>
+        <Typography variant="h2">
+          HP・LP作成
+        </Typography>
+        <Typography>
+          企業様のHPや大学の体育会部活動、個人ブログまで幅広く作成しています。
+          ヒアリングから、デザイン提案、コーディングまでを一貫して行います。
+        </Typography>
         <Typography variant="h2">
           システム開発
         </Typography>
         <Typography></Typography>
+        <Typography variant="h2">
+          効率化・DX
+        </Typography>
+        <Typography variant="h2">
+          ECサイトカスタマイズ
+        </Typography>
+        <Typography variant="h2">
+          
+        </Typography>
       </Container>
       <Grid container spacing={2} justifyContent="center">
         {serviceList.map((item)=>{

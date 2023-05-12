@@ -1,7 +1,7 @@
 import { Box, Drawer } from "@mui/material";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import linkList from "./linkList";
+import linkList from "../libs/linkList";
 import styles from "./Sidebar.module.css";
 import { useEffect } from "react";
 

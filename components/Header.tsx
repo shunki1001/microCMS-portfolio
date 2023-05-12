@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import linkList from "./linkList";
+import linkList from "../libs/linkList";
 
 import { Box, Toolbar } from "@mui/material";
 import styles from "./Header.module.css";

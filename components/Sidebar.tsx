@@ -5,7 +5,7 @@ import linkList from "./linkList";
 import styles from "./Sidebar.module.css";
 import { useEffect } from "react";
 
-export const drawerWidth = 240;
+export const drawerWidth = 150;
 
 interface Props {
   variant: "permanent" | "persistent" | "temporary" | undefined;

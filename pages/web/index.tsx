@@ -1,4 +1,4 @@
-import { Box, Card, CardActionArea, CardContent, CardMedia, Paper, Typography, styled } from "@mui/material";
+import { Box, Card, CardActionArea, CardContent, CardMedia, Container, Paper, Typography, styled } from "@mui/material";
 import Grid from '@mui/material/Grid';
 import { serviceList } from "./serviceList";
 
@@ -10,16 +10,19 @@ const Web = () => {
 
   }
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2} sx={{justifyContent: "center" }}>
+    <Box sx={{ flexGrow: 1, maxWidth: "900px", margin: " 0 auto", padding: "16px" }}>
+      <Container maxWidth="sm">
+        
+      </Container>
+      <Grid container spacing={2} justifyContent="center">
         {serviceList.map((item)=>{
           return (
-            <Grid item md={6}>
+            <Grid item xs={12} md={6}>
               <Card sx={{ maxWidth: 345, margin: "0 auto"}}>
                 <CardActionArea onClick={handleClick}>
                   <CardMedia
                     component="img"
-                    height="140"
+                    height="300"
                     src={item.img}
                     alt=""
                   />

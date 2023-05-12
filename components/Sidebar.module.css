@@ -11,7 +11,7 @@
   justify-content: space-between;
   list-style: none;
   text-align: left;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .nav_link {
   text-decoration: none;
@@ -26,8 +26,8 @@
 }
 .nav_link li {
   display: inline-block;
-  width: 176px;
-  margin-top: 24px;
+  width: 100px;
+  margin-top: 16px;
   margin-left: 24px;
 }
 /* .nav_active li::after {

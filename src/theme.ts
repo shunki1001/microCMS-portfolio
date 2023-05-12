@@ -16,6 +16,7 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: fontFamily,
+    fontSize: 16,
   },
   components: {
     MuiPaper: {
@@ -25,6 +26,13 @@ const theme = createTheme({
         },
       },
     },
+    MuiAppBar: {
+      styleOverrides:{
+        root:{
+          boxShadow: "none",
+        }
+      }
+    }
   },
 });
 

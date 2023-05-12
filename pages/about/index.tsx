@@ -1,19 +1,15 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import styles from "../../styles/Home.module.css";
 
 const About = () => {
   return (
-    <Box
-      sx={{
-        width: "80%",
-        maxWidth: "500px",
-        margin: "0 auto",
-      }}
+    <Container
+      maxWidth="sm"
     >
       {/* <FirstLogo /> */}
       <Box className={styles.home_contents}>
         <Box className={styles.about_contents}>
-          <article>
+          <article className={styles.tajimuratoha}>
             <Typography variant="h2">たじむらとは</Typography>
             <Typography>
               たじむらとは、夫婦で活動するフリーランスチームです。
@@ -60,7 +56,7 @@ const About = () => {
           </article>
         </Box>
       </Box>
-    </Box>
+    </Container>
   );
 };
 

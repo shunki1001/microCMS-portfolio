@@ -17,6 +17,24 @@ const theme = createTheme({
   typography: {
     fontFamily: fontFamily,
     fontSize: 16,
+    h2:{
+      position: "relative",
+      display: "inline-block",
+      margin: "2em auto",
+      fontSize: "20px",
+      marginTop: "calc(4em + 60px)",
+      '&::before':{
+        content:"''",
+        position:"absolute",
+        backgroundColor: "black",
+        top: "calc(-100% - 60px)",
+        left: "0",
+        right: "0",
+        width: "2px",
+        height: "60px",
+        margin: "auto",
+      }
+    }
   },
   components: {
     MuiPaper: {

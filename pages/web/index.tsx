@@ -12,7 +12,10 @@ const Web = () => {
   return (
     <Box sx={{ flexGrow: 1, maxWidth: "900px", margin: " 0 auto", padding: "16px" }}>
       <Container maxWidth="sm">
-        
+        <Typography variant="h2">
+          システム開発
+        </Typography>
+        <Typography></Typography>
       </Container>
       <Grid container spacing={2} justifyContent="center">
         {serviceList.map((item)=>{

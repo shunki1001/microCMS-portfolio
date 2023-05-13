@@ -21,7 +21,8 @@ const theme = createTheme({
       position: "relative",
       display: "inline-block",
       margin: "2em auto",
-      fontSize: "20px",
+      fontSize: "24px",
+      fontWeight: "700",
       marginTop: "calc(4em + 60px)",
       '&::before':{
         content:"''",

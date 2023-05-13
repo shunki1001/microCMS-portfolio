@@ -3,8 +3,6 @@ import Grid from '@mui/material/Grid';
 import { serviceList } from "../../libs/serviceList";
 import { webList } from "../../libs/webList";
 
-
-
 const Web = () => {
 
   const handleClick = () =>{

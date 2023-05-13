@@ -7,6 +7,7 @@ import { CacheProvider, EmotionCache } from "@emotion/react";
 import theme from "../src/theme";
 import createEmotionCache from "../src/createEmotionCache";
 import ResponsiveLayout from "../components/Layouts/ResponsiveLayout";
+import '../styles/globals.css';
 
 const clientSideEmotionCache = createEmotionCache();
 interface MyAppProps extends AppProps {

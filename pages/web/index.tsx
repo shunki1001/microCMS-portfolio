@@ -15,7 +15,7 @@ const Web = () => {
       <Container maxWidth="sm" sx={{textAlign:  "center"}}>
         {webList.map((item)=>{
           return(
-            <Box>
+            <Box key={item.title}>
               <Typography variant="h2">{item.title}</Typography>
               <Typography>{item.content}</Typography>
               <Typography>例）{item.example}</Typography>
@@ -27,7 +27,7 @@ const Web = () => {
       <Grid container spacing={2} justifyContent="center">
         {serviceList.map((item)=>{
           return (
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} key={item.title}>
               <Card sx={{ maxWidth: 345, margin: "0 auto"}}>
                 <CardActionArea onClick={handleClick}>
                   <CardMedia

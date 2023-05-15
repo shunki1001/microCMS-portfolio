@@ -59,6 +59,7 @@ const ResponsiveLayout: React.FC<Props> = ({ children }) => {
                         src="/images/only-text.svg"
                         width={240}
                         height={24}
+                        alt="たじむらのテキストロゴ"
                       />
                     </Link>
                   </Box>

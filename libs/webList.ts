@@ -24,4 +24,10 @@ export const webList: web[] = [
         example:"PC初期設定、自作PC作成、PCバグ修理",
         photo: "/images/web_cooporation.png"
     },
+    {
+        title:"写真・動画撮影～編集",
+        content: "Sony a7ⅲを使用した、「スマホとはレベルが違う」写真や動画を。",
+        example:"商品写真、動画撮影、Youtube",
+        photo: "/images/web_camera.png"
+    },
 ]

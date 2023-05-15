@@ -3,6 +3,7 @@
   text-align: center;
   padding-top: 5vh;
 }
+/* トップバナー（非表示@23/05/15） */
 .top_banner_container{
   position: relative;
   width: 100%;
@@ -12,11 +13,20 @@
   object-fit: cover;
   opacity: 0.5;
 }
-
+/* Aboutページ */
 .about{
   margin-top: 50px;
 }
-
+/* contactページ */
+.contact{
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.contact iframe{
+  width: 100%;
+  margin-top: 50px;
+}
+/* TOPページ */
 .left_right{
   width: 60%;
   margin: 1em auto;

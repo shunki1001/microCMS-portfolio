@@ -38,25 +38,19 @@ const Sidebar: React.FC<Props> = (props) => {
     >
       <Box className={styles.logo_container}>
         <Link href="/">
-          <a>
             <img src="/images/menu-logo.png" className={styles.logo} />
-          </a>
         </Link>
       </Box>
       <Box className={styles.nav_container} component="nav">
         {linkList.map((menu) => {
           return (
-            <Link href={menu.path} key={menu.name}>
-              <a
-                className={
-                  router.pathname == menu.path
-                    ? `${styles.nav_active} ${styles.nav_link}`
-                    : `${styles.nav_link}`
-                }
-              >
-                <li>{menu.name}</li>
-                <div className={styles.icon_container}></div>
-              </a>
+            <Link href={menu.path} key={menu.name} className={
+              router.pathname == menu.path
+                ? `${styles.nav_active} ${styles.nav_link}`
+                : `${styles.nav_link}`
+            }>
+              <li>{menu.name}</li>
+              <div className={styles.icon_container}></div>
             </Link>
           );
         })}

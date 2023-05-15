@@ -10,3 +10,16 @@
 .about{
   margin-top: 50px;
 }
+
+.left_right{
+  width: 80%;
+  margin: 1em auto;
+}
+.left_right:nth-child(odd){
+  text-align: right;
+  margin-right: 0;
+}
+.left_right:nth-child(even){
+  text-align: left;
+  margin-left: 0;
+}

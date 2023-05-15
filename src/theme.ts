@@ -21,7 +21,7 @@ const theme = createTheme({
       position: "relative",
       display: "inline-block",
       margin: "2em auto",
-      fontSize: "24px",
+      fontSize: "28px",
       fontWeight: "700",
       marginTop: "calc(4em + 60px)",
       '&::before':{
@@ -35,6 +35,11 @@ const theme = createTheme({
         height: "60px",
         margin: "auto",
       },
+    },
+    h3:{
+      fontSize: "20px",
+      fontWeight: "700",
+      margin: "1.5em auto",
     },
     body1:{
       lineHeight: "2em",

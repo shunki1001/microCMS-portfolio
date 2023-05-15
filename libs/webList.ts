@@ -10,24 +10,18 @@ export const webList: web[] = [
         title: "HP・LP作成",
         content: "企業様のHPや大学の体育会部活動、個人ブログまで幅広く作成しています。",
         example: "ページ下部にございます",
-        photo: "/images/only-text.svg"
+        photo: "/images/web_responsive_website_design.png"
     },
     {
-        title:"システム開発",
+        title:"システム開発・ツール作成",
         content: "作って終わりではなく、改善を繰り返すことで、お客様の要求にお応えします。",
-        example:"アポイント管理システム、読書管理アプリ、日本酒提案アプリ",
-        photo: "/images/only-text.svg"
+        example:"アポイント管理システム、エクセルマクロ作成、日本酒提案アプリ",
+        photo: "/images/web_automation_robot_v2.png"
     },
     {
-        title:"効率化・DX",
-        content: "「ちょっと面倒だな」と思う業務を一度相談してみてください",
-        example:"CSV自動変換アプリ、エクセルテンプレート作成、エクセルマクロ作成",
-        photo: "/images/only-text.svg"
-    },
-    {
-        title:"ECサイトカスタマイズ",
-        content: "便利な一方で、思うようにカスタマイズできない方のお手伝いをします",
-        example:"BASE、サブスクストア、Biiino",
-        photo: "/images/only-text.svg"
+        title:"PCセットアップ・PCヘルプ",
+        content: "【地域限定】PCセットアップやPC周辺で困ったことがありましたら、なんでもお手伝いします。",
+        example:"PC初期設定、自作PC作成、PCバグ修理",
+        photo: "/images/web_cooporation.png"
     },
 ]

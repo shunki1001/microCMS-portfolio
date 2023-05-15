@@ -12,14 +12,30 @@
 }
 
 .left_right{
-  width: 80%;
+  width: 60%;
   margin: 1em auto;
+  position: relative;
+  
+}
+.left_right img{
+  width: 60%;
+  min-width: 300px;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  z-index: 5;
 }
 .left_right:nth-child(odd){
   text-align: right;
   margin-right: 0;
 }
+.left_right:nth-child(odd) img{
+  left: -60%;
+}
 .left_right:nth-child(even){
   text-align: left;
   margin-left: 0;
+}
+.left_right:nth-child(even) img{
+  right: -60%;
 }

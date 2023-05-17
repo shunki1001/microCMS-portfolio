@@ -1,7 +1,10 @@
-import { Box, Card, CardActionArea, CardContent, CardMedia, Container, Fade, FormControlLabel, Paper, Switch, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, styled } from "@mui/material";
+import { Box, Button, Card, CardActionArea, CardContent, CardMedia, Container, Fade, FormControlLabel, Paper, Stack, Switch, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, styled } from "@mui/material";
 import Grid from '@mui/material/Grid';
 import { serviceList } from "../../libs/serviceList";
 import { skillList } from "../../libs/skillList";
+
+import { GitHub } from "@mui/icons-material";
+import Link from "next/link";
 
 const Web = () => {
 
@@ -34,6 +37,13 @@ const Web = () => {
             </TableBody>
           </Table>
         </TableContainer>
+        <Stack justifyContent="center" alignItems="center" sx={{margin: "1em auto"}}>
+          <Link href="https://github.com/shunki1001" style={{cursor: 'pointer'}}>
+            <Button variant="outlined" startIcon={<GitHub />} sx={{maxWidth:"10em"}}>
+              github
+            </Button>
+          </Link>
+        </Stack>
         <Typography variant="h2">HP作成実績（例）</Typography>
       </Container>
       <Grid container spacing={2} justifyContent="center">

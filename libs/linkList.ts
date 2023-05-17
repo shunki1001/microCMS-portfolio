@@ -13,6 +13,10 @@ const linkList: Array<PathList> = [
     name: "photo",
   },
   {
+    path: "/cad",
+    name: "3D",
+  },
+  {
     path: "/blogs",
     name: "blogs",
   },
